@@ -10,17 +10,6 @@ const splide = new Splide('.splide', {
 });
 splide.mount();
 
-new Glider(document.querySelector('.glider'), {
-    slidesToScroll: 1,
-    slidesToShow: 5,
-    draggable: true,
-    dots: '.dots',
-    arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
-    }
-}).mount();
-
 let list = document.querySelector('.list');
 let hamburger = document.querySelector('.hamburger');
 console.log()

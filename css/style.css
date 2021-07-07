@@ -71,6 +71,10 @@ html{
     margin: 0 .8rem;
 }
 
+.profile-ul{
+    display: none;
+}
+
 .list ul li a{
     text-decoration: none;
     font-size: 0.9rem;
@@ -259,33 +263,38 @@ html{
 }
 
 .latest-product-heading{
-    padding: 2rem 0rem;
+    padding-top: 2rem;
 }
 
-.glider-wrapper{
+.latest-product-wrapper{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    overflow-x: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
-
-.glider-wrapper > div{
-    text-align: center;
-}
-
 
 .latest-product{
     background-color: transparent;
     display: flex;
     flex-direction: column;
+    padding: 1rem 0rem;
+    justify-content: space-between;
+    text-align: center;
+} 
+
+.latest-product .img{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1.5rem 0rem;
+    margin: 0 auto;
+    width: 144px;
+    height: 197px;
 }
 
 .latest-product .img img{
-    width: 60%;
-    height: 185px;
-    
-} 
+    max-width: 60%;
+}
 
 .latest-product-content{
     padding: 1rem 0rem;
