@@ -12,7 +12,8 @@ splide.mount();
 
 let list = document.querySelector('.list');
 let hamburger = document.querySelector('.hamburger');
-console.log()
+
+
 hamburger.addEventListener('click', () => {
     if (list.className.includes('show')) {
         hamburger.firstElementChild.firstElementChild.classList.remove('fa-times');

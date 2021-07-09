@@ -2,21 +2,6 @@
 @import url('./variable.css');
 @import url('./responsive.css');
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  height: 2000px;
-}
-
-html{
-    font-size: 16px;
-}
-
 .hamburger{
     display: none;
 }
@@ -28,8 +13,8 @@ html{
 
 .nav{
     background-color: var(--pure-white);
-    position: fixed;
     width: 100%;
+    position: fixed;
     height: 68px;
     box-shadow: var(--box-shadow);
     z-index: 9999;
@@ -69,6 +54,16 @@ html{
 
 .list ul li{
     margin: 0 .8rem;
+    padding: .5rem .8rem;
+    border: 2px solid transparent;
+}
+
+.list .active{
+    border: 2px solid var(--bold-dark);
+}
+
+.list ul li:hover{
+    border: 2px solid var(--bold-dark);
 }
 
 .profile-ul{
@@ -246,7 +241,7 @@ html{
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 2rem 0rem;
+    margin-bottom: 1rem;
     color: var(--bold-dark);
     letter-spacing: .5px;
     word-spacing: .5px;
@@ -263,7 +258,8 @@ html{
 }
 
 .latest-product-heading{
-    padding-top: 2rem;
+    padding: 0rem;
+    margin-bottom: 1rem;
 }
 
 .latest-product-wrapper{
@@ -278,7 +274,6 @@ html{
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0rem;
     justify-content: space-between;
     text-align: center;
 } 
@@ -304,4 +299,80 @@ html{
     font-size: .8rem;
     color: tomato;
     margin: .5rem 0rem;
+}
+
+.banner-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.banner-wrapper .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-wrapper .img img{
+    width: 100%;
+}
+
+.accessories-section{
+    padding: 4rem 0rem;
+}
+
+.accessories-wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5rem;
+    padding: 2rem 0rem;
+}
+.accessories{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.accessories .img img{
+    width: 100%;
+}
+
+.accessories .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.access-content{
+    text-align: center;
+    margin: .5rem 0rem;
+}
+
+.access-content h4{
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-size: 1rem;
+}
+
+.best-seller{
+    position: relative;
+}
+
+.best-seller .tag{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.best-seller .tag span{
+    text-transform: capitalize;
+    display: block;
+    font-weight: 400;
+    font-size: .8rem;
+    background-color: tomato;
+    padding: .2rem .8rem;
+    color: var(--pure-white);
+    border-radius: 0px 0px 100px 0px;
 }
