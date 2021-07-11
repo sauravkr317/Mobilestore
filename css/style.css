@@ -168,7 +168,7 @@
     margin: 0 0.2rem!important;
 }
 
-.slider-section{
+.slider-section, .brand-section{
     padding: 4rem 0rem;
     width: 100%;
 
@@ -184,7 +184,7 @@
     align-items: center;
 }
 
-.slider-content{
+.slider-content, .subscribe{
     padding: 5rem 0rem;
 }
 
@@ -252,7 +252,7 @@
     font-size: .8rem;
 }
 
-.latest-products{
+.latest-products, .accessories-section{
     padding: 4rem 0rem;
     background-color: var(--pure-white);
 }
@@ -262,7 +262,7 @@
     margin-bottom: 1rem;
 }
 
-.latest-product-wrapper{
+.latest-product-wrapper, .bestseller-wrapper{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem;
@@ -270,7 +270,7 @@
     justify-content: center;
 }
 
-.latest-product{
+.latest-product, .bestseller-wrapper .bestseller-product{
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -278,7 +278,7 @@
     text-align: center;
 } 
 
-.latest-product .img{
+.latest-product .img, .bestseller-wrapper .bestseller-product .img{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +287,7 @@
     height: 197px;
 }
 
-.latest-product .img img{
+.latest-product .img img, .bestseller-wrapper .bestseller-product .img img{
     max-width: 60%;
 }
 
@@ -295,7 +295,7 @@
     padding: 1rem 0rem;
 }
 
-.latest-product-content .stars i{
+.latest-product-content .stars i, .bestseller-product-content .stars i{
     font-size: .8rem;
     color: tomato;
     margin: .5rem 0rem;
@@ -317,15 +317,22 @@
     width: 100%;
 }
 
-.accessories-section{
-    padding: 4rem 0rem;
-}
-
 .accessories-wrapper{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1.5rem;
     padding: 2rem 0rem;
+}
+
+.brands-wrapper, .we-offer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.brands-wrapper .brand{
+    cursor: pointer;
 }
 .accessories{
     width: 100%;
@@ -333,7 +340,7 @@
     cursor: pointer;
 }
 
-.accessories .img img{
+.accessories .img img, .brands-wrapper .brand img{
     width: 100%;
 }
 
@@ -360,7 +367,7 @@
 
 .best-seller .tag{
     position: absolute;
-    top: -15px;
+    top: 0px;
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
@@ -375,4 +382,136 @@
     padding: .2rem .8rem;
     color: var(--pure-white);
     border-radius: 0px 0px 100px 0px;
+}
+
+.bestseller-product, .latest-product{
+    padding: 1rem 0rem;
+}
+
+.we-offer{
+    background-color: var(--white);
+}
+
+.weoffer-div{
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weoffer-div h4{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 2rem 0rem;
+}
+
+.weoffer-div a{
+    text-decoration: none;
+    color: var(--bold-dark);
+    background-color: var(--pure-white);
+    padding: 2rem;
+    border-radius: 100px;
+}
+
+.weoffer-div a:hover > i{
+    transform: scale(1.2) rotateY(180deg);
+}
+
+.weoffer-div a i{
+    font-size: 3rem;
+    color: var(--medium-dark);
+    transform: scale(1.2);
+    transition: transform .2s ease-in-out;
+}
+
+.subscribe-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.email-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-section form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.email-section form input[type=email]{
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 1rem .8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.email-section form input[type=submit]{
+    color: var(--pure-white);
+    font-weight: 500;
+    background-color: var(--bold-dark);
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 1rem;
+    padding: .4rem 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.email-section form input::placeholder{
+    color: var(--light-grey);
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+
+.subscribe-content small{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--medium-dark);
+}
+
+.footer-section{
+    background-color: var(--bold-dark);
+}
+
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 4rem 0rem;
+}
+
+.footer-div h6{
+    color: var(--pure-white);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.footer-div ul{
+    padding: .8rem 0rem;
+    list-style-type: none;
+}
+
+.footer-div ul li{
+    font-size: .9rem;
+    color: var(--light-grey);
+    text-transform: capitalize;
+    margin: .8rem 0rem;
+}
+
+.footer-div ul li i{
+    color: var(--white);
+    margin-right: 1rem;
 }

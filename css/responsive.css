@@ -107,10 +107,22 @@
   .accessories-wrapper{
     grid-template-columns: repeat(4, 1fr)!important;
   }
+  
+  .we-offer-wrapper{
+    grid-template-columns: repeat(3, 1fr)!important;
+  }
+
+  .footer-wrapper{
+    grid-template-columns: repeat(3, 1fr)!important;
+  }
 }
 
 @media(max-width: 800px) {
-  .latest-product-wrapper{
+  .latest-product-wrapper, .bestseller-wrapper{
+    grid-template-columns: repeat(3, 1fr)!important;
+  }
+
+  .brands-wrapper{
     grid-template-columns: repeat(3, 1fr)!important;
   }
 }
@@ -133,6 +145,14 @@
     grid-template-columns: repeat(3, 1fr)!important;
   }
 
+  .we-offer-wrapper{
+    grid-template-columns: repeat(2, 1fr)!important;
+  }
+
+  .subscribe-wrapper{
+    grid-template-columns: 1fr!important;
+  }
+
   
 }
 
@@ -148,7 +168,15 @@
     grid-gap: 1rem !important;
   }
 
-  .latest-product-wrapper{
+  .latest-product-wrapper, .bestseller-wrapper{
+    grid-template-columns: repeat(2, 1fr)!important;
+  }
+
+  .brands-wrapper{
+    grid-template-columns: repeat(2, 1fr)!important;
+  }
+
+  .footer-wrapper{
     grid-template-columns: repeat(2, 1fr)!important;
   }
 }
